@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid black; */
+}
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #afafc7;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    /* size and weight */
+    font: 20px bold;
+}
+
+/*  indica que estos elementos deben comportarse como elementos de bloque */
+header, nav, section, footer, aside, nav, article {
+    display: block;
+}
+  
+/* div */
+#group {
+    width: 1000px;
+    /* background: #9d92f0; */
+    margin: 15px auto;
+    border: 1px solid black;
+    background: #fff;
+}
+
+/* header */
+#main_header {
+    background: #fffbb9;
+    padding: 20px;
+}
+
+#main_header h1 {
+    text-align: left;
+}
+
+/* nav */
+#main_menu { 
+    background: #ccc;
+    padding: 5px 15px;
+    text-align: left;
+}
+
+/* para todos los li del id main_menu */
+#main_menu li {
+    list-style: none;
+    padding: 5px;
+    font: bold 14px;
+    /* vuelve en linea las etiquetas de bloque */
+    display: inline-block;
+}
+
+/* section */
+#main_content {
+    margin: 20px;
+    width: 600px;
+    /* vieve flotante */
+    float: left;
+}
+
+.blog_post{
+    background: #fffbcc;
+    border: 1px solid #999;
+    padding: 20px;
+    /* para separar un blog post de otro */
+    margin-bottom: 10px;
+}
+
+time {
+    color: #999;
+}
+
+img {
+    width: 100px; /* ajusta el ancho según sea necesario */
+    height: auto; /* ajusta la altura automáticamente para mantener la proporción */ 
+    display: block;
+    /* centra la imagen */
+    margin: auto;
+}
+
+.blog_post footer{
+    text-align: right;
+    margin-top: 20px;
+}
+
+#sidebar {
+    width: 335px;
+    float: left;
+    /* 20px arriba y abajo, y 0 a los lados */
+    margin: 20px 0px;
+}
+
+#sidebar blockquote {
+    border: 1px solid black;
+    padding: 40px;
+    background: #fffbcc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main_footer {
+    /*  ayuda a evitar que los elementos siguientes floten alrededor de los elementos flotantes anteriores */
+    clear: both;
+    padding: 20px;
+    background: #ccc;
+}

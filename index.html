@@ -1,60 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Uno</title>
-</head>
-<body>
-    <header>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="group">
+      <header id="main_header">
         <h1>Mi blog</h1>
-    </header>
+      </header>
 
-    <nav>
+      <nav id="main_menu">
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Ayuda</a></li>
-            <li><a href="#">Contacto</a></li>
+          <li>Inicio</li>
+          <li>Ayuda</li>
+          <li>Contacto</li>
         </ul>
-    </nav>
+      </nav>
 
-    <section id="main-content">
-        <article>
-            <h2>Publication 1</h2>
-            <time datetime="25-01-24">Publicado 25-01-24</time>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, maiores in! Magnam eveniet earum obcaecati culpa ducimus assumenda minima labore repudiandae eos id ut, neque adipisci et sapiente molestiae numquam.</p>
-            <a href="https://google.com">Leer más</a>
-            <footer>
-                <p>Comentario (0)</p>
-            </footer>
+      <section id="main_content">
+        <article class="blog_post" id="post1">
+          <h2>Publication 1</h2>
+          <time datetime="25-01-24">Publicado 25-01-24</time>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam,
+            maiores in! Magnam eveniet earum obcaecati culpa ducimus assumenda
+            minima labore repudiandae eos id ut, neque adipisci et sapiente
+            molestiae numquam. <a href="">Leer más</a>
+          </p>
+          <footer>
+            <p>Comentario (0)</p>
+          </footer>
         </article>
-        <article>
-            <h2>Publication 2</h2>
-            <time datetime="25-01-24">Publicado 25-01-24</time>
-            <p>Lorem ipsum dolor sit <b>amet consectetur</b> adipisicing elit. Minus at fugiat voluptas sapiente asperiores <cite>voluptatibus veniam</cite> impedit quia aperiam <small>quibusdam itaque</small>, vero iure optio. Quas distinctio hic debitis a tempore. <span>para modificar con css.</span></p>
-            <a href="https://google.com">Leer más</a>
-            <img src="images/logo.jpg">
-            <footer>
-                <p>Comentario (10)</p>
-            </footer>
-        </article>
-    </section>
 
-    <!-- para contenido relacionado -->
-    <aside>
+        <article class="blog_post">
+          <h2>Publication 2</h2>
+          <time datetime="25-01-24">Publicado 25-01-24</time>
+          <img src="images/logo.jpg" />
+          <p>
+            Lorem ipsum dolor sit <b>amet consectetur</b> adipisicing elit.
+            Minus at fugiat voluptas sapiente asperiores
+            <cite>voluptatibus veniam</cite> impedit quia aperiam
+            <small>quibusdam itaque</small>, vero iure optio. Quas distinctio
+            hic debitis a tempore. <span>para modificar con css</span>. <a href="">Leer más</a>
+          </p>
+          <footer>
+            <p>Comentario (10)</p>
+          </footer>
+        </article>
+
+        <article class="blog_post">
+          <h2>Publication 3</h2>
+          <time datetime="25-01-24">Publicado 25-01-24</time>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fuga
+            amet numquam minima neque dignissimos, facilis asperiores? Deleniti
+            veritatis, at atque explicabo possimus voluptatum suscipit,
+            similique praesentium officiis iusto veniam. <a href="">Leer más</a>
+          </p>
+          <footer>
+            <p>Comentario (8)</p>
+          </footer>
+        </article>
+      </section>
+
+      <!-- para contenido relacionado -->
+      <aside id="sidebar">
         <h2>Barra lateral</h2>
         <p>Contenido de la barra lateral...</p>
-        <blockquote cite="https://google.com">
-            Mensaje 1
-        </blockquote>
-        <blockquote cite="https://google.com">
-            Mensaje 2
-        </blockquote>
-    </aside>
 
-    <!-- pie de pagina  -->
-    <footer>
+        <blockquote cite="">Mensaje 1</blockquote>
+
+        <blockquote cite="">Mensaje 2</blockquote>
+      </aside>
+
+      <!-- pie de pagina  -->
+      <footer id="main_footer">
         &copy; 2024 Mi blog. Todos los derechos reservados.
-    </footer>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
